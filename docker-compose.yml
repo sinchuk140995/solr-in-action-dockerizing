@@ -4,8 +4,13 @@ services:
     build: .
     ports:
       - "8983:8983"
-#     volumes:
-#       - cores:/solr/example/solr/
-
-# volumes:
-#   cores:
+    volumes:
+      - ./solr-in-action/example-docs/ch10/cores/solrpedia:/solr/example/solr/solrpedia
+      - ./solr-in-action/example-docs/ch14/cores/core-per-language:/solr/example/solr/core-per-language
+      - ./solr-in-action/example-docs/ch14/cores/english-example:/solr/example/solr/english-example
+      - ./solr-in-action/example-docs/ch14/cores/field-per-language:/solr/example/solr/field-per-language
+      - ./solr-in-action/example-docs/ch14/cores/langid:/solr/example/solr/langid
+      - ./solr-in-action/example-docs/ch14/cores/langid2:/solr/example/solr/langid2
+      - ./solr-in-action/example-docs/ch14/cores/lib:/solr/example/solr/lib
+      - ./solr-in-action/example-docs/ch14/cores/multi-langid:/solr/example/solr/multi-langid
+      - ./solr-in-action/example-docs/ch14/cores/multi-language-field:/solr/example/solr/multi-language-field

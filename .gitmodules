@@ -1,0 +1,3 @@
+[submodule "solr-in-action"]
+	path = solr-in-action
+	url = https://github.com/treygrainger/solr-in-action.git
